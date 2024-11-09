@@ -66,16 +66,34 @@ body {
             align-content: center;
             align-items: center;
             justify-items: center;
+            color: white;
 
             h1 {
                 grid-column: 1 / -1;
+                align-self: end;
                 grid-row: 1;
-                color: white;
+                font-size: calc(4rem + 2vw);
+                font-style: italic;
+                font-weight: 900;
+                text-shadow: -20px 14px 10px #000000;
             }
 
-            p {
+            >div {
                 grid-column: 1 / -1;
                 grid-row: 2;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: calc(1.2rem + 1vw);
+                align-self: start;
+                row-gap: 30px;
+                margin-top: 30px;
+                max-width: 50ch;
+
+                p {
+                    text-align: center;
+                    font-size: calc(1rem + 1vw);
+                }
             }
 
             img {
