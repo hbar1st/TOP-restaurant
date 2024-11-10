@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'niconne';
+    src: url('niconne-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body img {
+    grid-row: 2;
+    grid-column: 1 / -1;
+}
+body p:first-of-type {
+    grid-row: 2;
+    grid-column: 2 / -1;
+    max-width: 50ch;
+    font-size: calc(1.1rem + 1vw);
+    font-family: 'niconne';
+}

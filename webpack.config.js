@@ -33,12 +33,11 @@ module.exports = {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
             },
-            /** this section of the module rules is not needed unless manipulating images in the js file 
-                        {
-                            test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                            type: "asset/resource",
-                        },
-            */
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: "asset/resource",
+            },
+
         ],
     },
 };
